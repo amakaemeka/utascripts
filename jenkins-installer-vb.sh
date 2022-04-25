@@ -14,6 +14,12 @@ echo redhat | passwd jenkins --stdin
 echo 'jenkins ALL=(ALL) NOPASSWD: ALL' > /etc/sudoers.d/jenkins
 chage -d 0 -m3 -M90 -W5 -I 7 -E 2023-04-10 jenkins
 
+echo creating user01 ...; sleep 3
+useradd user01
+echo "redhat | passwd --stdin
+echo user01 ALL=(ALL) ALL >> /etc/sudoers.d/user01
+chage -d 0 -m 3 -M 180 -I 7 -E 2029-4-30 user01 
+
 echo
 echo Updating the OS...
 dnf -y upgrade
