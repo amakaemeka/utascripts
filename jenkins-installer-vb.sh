@@ -2,7 +2,7 @@
 # Install Jenkins
 
 echo "This script installs Jenkins from a fresh RHEL8 server."
-echo "It also creates user jenkins with sudo privilege."
+echo "It also creates user jenkins and user01 with sudo privilege."
 echo
 echo "Copyright 2022. Unix Training Academy Inc."
 sleep 5
